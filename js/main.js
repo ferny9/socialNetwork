@@ -1,100 +1,3 @@
-/*--------------- buttons ---------------*/
-
-$('.btnGrey').mousedown(function(){
-	$(this).css('background', 'linear-gradient(#C0C0C0, #DCDCDC)');
-});
-
-$('.btnGrey').mouseup(function(){
-	$(this).css('background', 'linear-gradient(#DCDCDC, #C0C0C0)');
-});
-
-$('.btnBlue').mousedown(function(){
-	$(this).css('background', 'linear-gradient(#00008B, #0000FF)');
-});
-
-$('.btnBlue').mouseup(function(){
-	$(this).css('background', 'linear-gradient(#0000FF, #00008B)');
-});
-
-$('.btnRed').mousedown(function(){
-	$(this).css('background', 'linear-gradient(#800000, #FF0000)');
-});
-
-$('.btnRed').mouseup(function(){
-	$(this).css('background', 'linear-gradient(#FF0000, #800000)');
-});
-
-$('.btnYellow').mousedown(function(){
-	$(this).css('background', 'linear-gradient(#808000, #FFFF00)');
-});
-
-$('.btnYellow').mouseup(function(){
-	$(this).css('background', 'linear-gradient(#FFFF00, #808000)');
-});
-
-/*--------------- users ---------------*/
-
-var users = [
-    {
-        name: 'Jack',
-        sname: 'Smith',
-        nick: 'jSmith',
-        pass: '12345',
-        age: 23,
-        country: 'Ireland',
-        about: 'I like fishing and swimming',
-        blackList: [],
-        friends: [],
-        posts: []
-    }, {
-        name: '111',
-        sname: '111',
-        nick: '111',
-        pass: '111',
-        age: 23,
-        country: 'Ireland',
-        about: 'I like fishing and swimming',
-        blackList: [],
-        friends: [],
-        posts: []
-    }, {
-        name: '222',
-        sname: '222',
-        nick: '222',
-        pass: '222',
-        age: 23,
-        country: 'Ireland',
-        about: 'I like fishing and swimming',
-        blackList: [],
-        friends: [],
-        posts: []
-    }, {
-        name: '333',
-        sname: '333',
-        nick: '333',
-        pass: '333',
-        age: 23,
-        country: 'Ireland',
-        about: 'I like fishing and swimming',
-        blackList: [],
-        friends: [],
-        posts: []
-    }
-]
-
-function user() {
-    this.name = name;
-    this.sname = sname;
-    this.nick = nick;
-    this.pass = pass;
-    this.age = age;
-    this.country = country;
-    this.about = about;
-    this.blackList = [];
-    this.friends = [];
-    this.posts = [];
-};
-
 /*--------------- registration ---------------*/
 
 var formHide = true;
@@ -754,3 +657,100 @@ $('body').on('click', '.removePost', function () {
     $(this).closest('.page__post').remove();
     $('.page__blogEdit input:eq(1)').click();
 });
+
+/*--------------- buttons ---------------*/
+
+$('.btnGrey').mousedown(function(){
+	$(this).css('background', 'linear-gradient(#C0C0C0, #DCDCDC)');
+});
+
+$('.btnGrey').mouseup(function(){
+	$(this).css('background', 'linear-gradient(#DCDCDC, #C0C0C0)');
+});
+
+$('.btnBlue').mousedown(function(){
+	$(this).css('background', 'linear-gradient(#00008B, #0000FF)');
+});
+
+$('.btnBlue').mouseup(function(){
+	$(this).css('background', 'linear-gradient(#0000FF, #00008B)');
+});
+
+$('.btnRed').mousedown(function(){
+	$(this).css('background', 'linear-gradient(#800000, #FF0000)');
+});
+
+$('.btnRed').mouseup(function(){
+	$(this).css('background', 'linear-gradient(#FF0000, #800000)');
+});
+
+$('.btnYellow').mousedown(function(){
+	$(this).css('background', 'linear-gradient(#808000, #FFFF00)');
+});
+
+$('.btnYellow').mouseup(function(){
+	$(this).css('background', 'linear-gradient(#FFFF00, #808000)');
+});
+
+/*--------------- users ---------------*/
+
+var users = [
+    {
+        name: 'Jack',
+        sname: 'Smith',
+        nick: 'jSmith',
+        pass: '12345',
+        age: 23,
+        country: 'Ireland',
+        about: 'I like fishing and swimming',
+        blackList: [],
+        friends: [],
+        posts: []
+    }, {
+        name: '111',
+        sname: '111',
+        nick: '111',
+        pass: '111',
+        age: 23,
+        country: 'Ireland',
+        about: 'I like fishing and swimming',
+        blackList: [],
+        friends: [],
+        posts: []
+    }, {
+        name: '222',
+        sname: '222',
+        nick: '222',
+        pass: '222',
+        age: 23,
+        country: 'Ireland',
+        about: 'I like fishing and swimming',
+        blackList: [],
+        friends: [],
+        posts: []
+    }, {
+        name: '333',
+        sname: '333',
+        nick: '333',
+        pass: '333',
+        age: 23,
+        country: 'Ireland',
+        about: 'I like fishing and swimming',
+        blackList: [],
+        friends: [],
+        posts: []
+    }
+]
+
+function user() {
+    this.name = name;
+    this.sname = sname;
+    this.nick = nick;
+    this.pass = pass;
+    this.age = age;
+    this.country = country;
+    this.about = about;
+    this.blackList = [];
+    this.friends = [];
+    this.posts = [];
+};
